@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Polymer 1.4 data table test</title>
+    <script src="bower_components/webcomponentsjs/webcomponents-lite.js"></script>
+    <link rel="import" href="bower_components/polymer/polymer.html"/>
+    <link rel="import" href="bower_components/px-theme/px-theme-styles.html"/>
+    <link rel="import" href="bower_components/px-data-table/px-data-table.html"/>
+    <link rel="import" href="bower_components/iron-ajax/iron-ajax.html"/>
+  </head>
+  <body>
+    <template is="dom-bind">
+        <iron-ajax
+        auto
+        url="bower_components/px-data-table/contacts-mini.json"
+        handle-as="json"
+        last-response="{{data}}"></iron-ajax>
+
+        <px-data-table table-data="{{data}}"></px-data-table>
+    </template>
+  </body>
+</html>

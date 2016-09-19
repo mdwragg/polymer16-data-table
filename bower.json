@@ -1,0 +1,25 @@
+{
+  "name": "dt14",
+  "authors": [
+    "Martin Wragg <mdwragg@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "1.6",
+    "px-data-table": "^1.13.3",
+    "iron-ajax": "^1.4.3"
+  },
+  "resolutions": {
+    "polymer": "1.4"
+  }
+}
